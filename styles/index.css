@@ -79,7 +79,41 @@ padding: 8px 20px;
     background: #4EC5F7;
     margin-top: 25px;
 }
+.online-game{
+    margin-top: 100px;
+    text-align: center;
+}
+/* online game part */
+.online-game-title{
+   font-size: 50px;
+   font-weight: 700;
+}
+.online-game-title span{
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.online-game-description{
+color: #534C64;
+font-size: 18px;
+padding: 16px 0px 40px 0px;
+}
+.online-game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.online-game-container img:hover{
+ border-radius: 16px;
+border: 4px solid #FF42A5;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+color: gray;
 
+}
 
 
 
@@ -92,14 +126,14 @@ padding: 8px 20px;
 /* responsive part */
 @media screen and (max-width:576px) {
     .nav,
-    .nav ul{
+    .nav ul,
+    .online-game-container {
         flex-direction: column;
     }
     .nav-img{
         padding-bottom: 5px;
     }
     .banner{
-        
         margin: 70px 20px;
         flex-direction: column-reverse;
     }
@@ -116,4 +150,12 @@ padding: 8px 20px;
     .nav,.nav ul{
         padding: 10px;
     }
-}
+    .banner{
+        margin: 70px 20px;
+        flex-direction: column-reverse;
+    }
+    .banner-item{
+        margin-bottom: 60px;
+        text-align: center;
+        }
+    }
