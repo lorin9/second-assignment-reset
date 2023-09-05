@@ -42,8 +42,43 @@ gap: 40px;
 background: rgba(11, 2, 35, 0.10);
 padding: 8px 20px;
 }
-
-
+/* banner part */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.banner-title-1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.banner-title-2{
+    font-size: 85px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.banner p{
+    padding: 10px 10px;
+}
+.btn-pink{
+    padding: 20px 40px;
+    border-radius: 48px;
+  background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    color: white;
+    border: 0;
+    margin-top: 25px;
+}
+.btn-sky-blue{
+    padding: 20px 40px;
+    border-radius: 48px;
+    color: white;
+    border: 0;
+    background: #4EC5F7;
+    margin-top: 25px;
+}
 
 
 
@@ -56,11 +91,24 @@ padding: 8px 20px;
 
 /* responsive part */
 @media screen and (max-width:576px) {
-    .nav,.nav ul{
+    .nav,
+    .nav ul{
         flex-direction: column;
     }
     .nav-img{
         padding-bottom: 5px;
+    }
+    .banner{
+        
+        margin: 70px 20px;
+        flex-direction: column-reverse;
+    }
+    .banner-item{
+    margin-bottom: 60px;
+    text-align: center;
+    }
+    .banner-item img{
+        width: 100%;
     }
 }
 /* responsive for medium devices */
