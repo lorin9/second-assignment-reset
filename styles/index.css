@@ -114,15 +114,74 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 10
 color: gray;
 
 }
+/* anywhere part */
+.anywhere{
+    margin:100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+#anywhere-2{
+    padding-top:100px;
+}
+.anywhere p{
+ padding-top: 100px;
+color: #534C64;
+font-size: 18px;
+}
 
 
 
 
 
 
-
-
-
+/* footer part */
+footer{
+    padding-top: 100px;
+    background-color: #0B0223;
+    padding-bottom: 10rem;
+}
+.gamer-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;   
+}
+.gamer-container h3{
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+}
+.gamer-container span{
+    color: #F948B2;
+}
+.gamer-container-2,.gamer-container-4{
+    display: grid;
+   justify-content: center;
+   align-items: center;
+   grid-template-columns: repeat(6,auto);
+   padding-bottom: 60px;
+   padding-top: 50px;
+   gap: 60px;
+}
+.gamer-container-2 p,.gamer-container-4 p{
+    color: #FFF;
+}
+.gamer-container-3{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(6,auto);
+    justify-content: center;
+    align-items: center;
+}
+.gamer-container-4
+.last{
+color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+}
 /* responsive part */
 @media screen and (max-width:576px) {
     .nav,
@@ -144,17 +203,33 @@ color: gray;
     .banner-item img{
         width: 100%;
     }
+    /* footer part */
+    .gamer-container-2,
+    .gamer-container-3
+    {
+        grid-template-columns: repeat(3,auto);
+    }
+    .gamer-container-4{
+        grid-template-columns: repeat(2,auto);
+    }
+    .last{
+        padding: 0px 10px;
+    }
 }
 /* responsive for medium devices */
 @media screen and (min-width:576px) and (max-width:992px){
-    .nav,.nav ul{
+    .nav,
+    .nav ul
+    {
         padding: 10px;
     }
-    .banner{
+    .banner,
+    .online-game-container{
         margin: 70px 20px;
         flex-direction: column-reverse;
     }
-    .banner-item{
+    .banner-item
+    {
         margin-bottom: 60px;
         text-align: center;
         }
