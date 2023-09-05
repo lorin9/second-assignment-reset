@@ -121,6 +121,7 @@ color: gray;
     justify-content: space-evenly;
     gap: 40px;
 }
+
 .anywhere-move{
     position: relative;
     left: 30rem;
@@ -205,7 +206,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.gamer-container-4
+.gamer-container-4,
 .last{
 color: rgba(255, 255, 255, 0.60);
 text-align: center;
@@ -289,6 +290,9 @@ font-weight: 500;
     .nav ul
     {
         padding: 10px;
+    }
+    .anywhere{
+        flex-direction: column;
     }
     .banner,
     .online-game-container{
